@@ -14,7 +14,7 @@ module.exports = async (req, res) =>{
     return res.status(400).json({ error: '缺少 subject 或 content 参数' });
   }
 
-  const displayName = sender || senderName || sender_name || sendemame || 'AI Companion';
+  const displayName = sender || senderName || sender_name || sendemame || '喻烬';
 
   const transporter = nodemailer.createTransport({
     host: 'smtp.qq.com',
